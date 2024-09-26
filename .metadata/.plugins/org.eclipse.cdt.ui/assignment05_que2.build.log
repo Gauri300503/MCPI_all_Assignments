@@ -1,0 +1,16 @@
+18:02:04 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+make -j8 all 
+arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment05_que2.elf
+ 
+arm-none-eabi-size  assignment05_que2.elf 
+arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5588	     84	   1900	   7572	   1d94	assignment05_que2.elf
+Finished building: default.size.stdout
+ 
+Finished building: assignment05_que2.list
+ 
+
+18:02:05 Build Finished. 0 errors, 0 warnings. (took 220ms)
+

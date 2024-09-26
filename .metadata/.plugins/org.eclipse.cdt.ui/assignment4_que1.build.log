@@ -1,0 +1,17 @@
+16:11:18 **** Incremental Build of configuration Debug for project assignment4_que1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/switch_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/switch_intr.d" -MT"Src/switch_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/switch_intr.o"
+arm-none-eabi-gcc -o "assignment4_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment4_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment4_que1.elf
+ 
+arm-none-eabi-size  assignment4_que1.elf 
+arm-none-eabi-objdump -h -S assignment4_que1.elf  > "assignment4_que1.list"
+   text	   data	    bss	    dec	    hex	filename
+   3880	     80	   1904	   5864	   16e8	assignment4_que1.elf
+Finished building: default.size.stdout
+ 
+Finished building: assignment4_que1.list
+ 
+
+16:11:19 Build Finished. 0 errors, 0 warnings. (took 643ms)
+
