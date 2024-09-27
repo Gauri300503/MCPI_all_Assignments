@@ -1,672 +1,436 @@
-16:03:44 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:10:41 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-size  assignment05_que2.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5428	     80	   1896	   7404	   1cec	assignment05_que2.elf
-Finished building: default.size.stdout
- 
-16:03:49 **** Incremental Build of configuration Debug for project assignment4_que1 ****
-make -j8 all 
-arm-none-eabi-size  assignment4_que1.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3880	     80	   1904	   5864	   16e8	assignment4_que1.elf
-Finished building: default.size.stdout
- 
-16:07:36 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
- 
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
-   text	   data	    bss	    dec	    hex	filename
-   5428	     80	   1896	   7404	   1cec	assignment05_que2.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment05_que2.list
- 
-16:07:42 **** Incremental Build of configuration Debug for project assignment4_que1 ****
-make -j8 all 
-arm-none-eabi-size  assignment4_que1.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3880	     80	   1904	   5864	   16e8	assignment4_que1.elf
-Finished building: default.size.stdout
- 
-16:10:54 **** Incremental Build of configuration Debug for project assignment4_que1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/switch_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/switch_intr.d" -MT"Src/switch_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/switch_intr.o"
-../Src/switch_intr.c:30:19: error: conflicting type qualifiers for 'SwitchExtiFlag'
-   30 | volatile uint32_t SwitchExtiFlag = 0;
-      |                   ^~~~~~~~~~~~~~
-In file included from ../Src/switch_intr.c:8:
-../Inc/switch_intr.h:22:17: note: previous declaration of 'SwitchExtiFlag' with type 'uint32_t' {aka 'long unsigned int'}
-   22 | extern uint32_t SwitchExtiFlag;
-      |                 ^~~~~~~~~~~~~~
-make: *** [Src/subdir.mk:37: Src/switch_intr.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-16:11:18 **** Incremental Build of configuration Debug for project assignment4_que1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/switch_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/switch_intr.d" -MT"Src/switch_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/switch_intr.o"
-arm-none-eabi-gcc -o "assignment4_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment4_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment4_que1.elf
- 
-arm-none-eabi-size  assignment4_que1.elf 
-arm-none-eabi-objdump -h -S assignment4_que1.elf  > "assignment4_que1.list"
-   text	   data	    bss	    dec	    hex	filename
-   3880	     80	   1904	   5864	   16e8	assignment4_que1.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment4_que1.list
- 
-16:46:20 **** Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32g473qetx.d" -MT"Startup/startup_stm32g473qetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32g473qetx.o" "../Startup/startup_stm32g473qetx.s"
+arm-none-eabi-gcc "../Src/accel.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/accel.d" -MT"Src/accel.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/accel.o"
 arm-none-eabi-gcc "../Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/i2c.o"
 arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/i2c_lcd.o"
 arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/itm.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/spi.d" -MT"Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/spi.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
 arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
-../Src/main.c:25:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   25 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+../Src/main.c:27:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   27 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
       |    ^~~~~~~
 ../Src/main.c: In function 'main':
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-arm-none-eabi-gcc -o "assignment06.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment06/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment06.elf
+../Src/main.c:35:9: warning: implicit declaration of function 'I2CPuts' [-Wimplicit-function-declaration]
+   35 |         I2CPuts("LIS3DSH Accel Demo!\r\n");
+      |         ^~~~~~~
+../Src/accel.c: In function 'SPI_WriteIO':
+../Src/accel.c:13:9: warning: implicit declaration of function 'SPI_CS_Enable' [-Wimplicit-function-declaration]
+   13 |         SPI_CS_Enable();
+      |         ^~~~~~~~~~~~~
+../Src/accel.c:15:9: warning: implicit declaration of function 'SPI_Transmit' [-Wimplicit-function-declaration]
+   15 |         SPI_Transmit(regr);
+      |         ^~~~~~~~~~~~
+../Src/accel.c:18:5: warning: implicit declaration of function 'SPI_CS_Disable' [-Wimplicit-function-declaration]
+   18 |     SPI_CS_Disable();
+      |     ^~~~~~~~~~~~~~
+../Src/accel.c: In function 'SPI_ReadIO':
+../Src/accel.c:27:11: warning: implicit declaration of function 'SPI_Receive' [-Wimplicit-function-declaration]
+   27 |   data[i]=SPI_Receive();
+      |           ^~~~~~~~~~~
+../Src/accel.c: In function 'LIS_Init':
+../Src/accel.c:33:3: warning: implicit declaration of function 'SPI_Init' [-Wimplicit-function-declaration]
+   33 |   SPI_Init();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:35: undefined reference to `I2CPuts'
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:43: undefined reference to `I2CPuts'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: assignment_day9_accel.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:12:50 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:27:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   27 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:35:9: warning: implicit declaration of function 'LCDPuts' [-Wimplicit-function-declaration]
+   35 |         LCDPuts("LIS3DSH Accel Demo!\r\n");
+      |         ^~~~~~~
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:35: undefined reference to `LCDPuts'
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:43: undefined reference to `LCDPuts'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: assignment_day9_accel.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:13:21 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:27:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   27 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:35:9: warning: implicit declaration of function 'LcdPuts' [-Wimplicit-function-declaration]
+   35 |         LcdPuts("LIS3DSH Accel Demo!\r\n");
+      |         ^~~~~~~
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:35: undefined reference to `LcdPuts'
+/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:43: undefined reference to `LcdPuts'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: assignment_day9_accel.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:13:49 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:27:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   27 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:35:9: warning: implicit declaration of function 'Lcd_Puts' [-Wimplicit-function-declaration]
+   35 |         Lcd_Puts("LIS3DSH Accel Demo!\r\n");
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
  
-arm-none-eabi-size  assignment06.elf 
-arm-none-eabi-objdump -h -S assignment06.elf  > "assignment06.list"
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
    text	   data	    bss	    dec	    hex	filename
-   2036	      4	   1564	   3604	    e14	assignment06.elf
+   5036	     84	   1900	   7020	   1b6c	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment06.list
+Finished building: assignment_day9_accel.list
  
-16:55:26 **** Incremental Build of configuration Debug for project assignment06 ****
+16:14:21 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32g473qetx.d" -MT"Startup/startup_stm32g473qetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32g473qetx.o" "../Startup/startup_stm32g473qetx.s"
+arm-none-eabi-gcc "../Src/accel.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/accel.d" -MT"Src/accel.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/accel.o"
 arm-none-eabi-gcc "../Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c.o"
 arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
 arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/spi.d" -MT"Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/spi.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
 arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-arm-none-eabi-gcc -o "assignment06.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment06/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment06.elf
+../Src/main.c:35:9: warning: implicit declaration of function 'Lcd_Puts' [-Wimplicit-function-declaration]
+   35 |         Lcd_Puts("LIS3DSH Accel Demo!\r\n");
+      |         ^~~~~~~~
+../Src/accel.c: In function 'SPI_WriteIO':
+../Src/accel.c:13:9: warning: implicit declaration of function 'SPI_CS_Enable' [-Wimplicit-function-declaration]
+   13 |         SPI_CS_Enable();
+      |         ^~~~~~~~~~~~~
+../Src/accel.c:15:9: warning: implicit declaration of function 'SPI_Transmit' [-Wimplicit-function-declaration]
+   15 |         SPI_Transmit(regr);
+      |         ^~~~~~~~~~~~
+../Src/accel.c:18:5: warning: implicit declaration of function 'SPI_CS_Disable' [-Wimplicit-function-declaration]
+   18 |     SPI_CS_Disable();
+      |     ^~~~~~~~~~~~~~
+../Src/accel.c: In function 'SPI_ReadIO':
+../Src/accel.c:27:11: warning: implicit declaration of function 'SPI_Receive' [-Wimplicit-function-declaration]
+   27 |   data[i]=SPI_Receive();
+      |           ^~~~~~~~~~~
+../Src/accel.c: In function 'LIS_Init':
+../Src/accel.c:33:3: warning: implicit declaration of function 'SPI_Init' [-Wimplicit-function-declaration]
+   33 |   SPI_Init();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
  
-arm-none-eabi-size  assignment06.elf 
-arm-none-eabi-objdump -h -S assignment06.elf  > "assignment06.list"
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
    text	   data	    bss	    dec	    hex	filename
-   2020	      4	   1564	   3588	    e04	assignment06.elf
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment06.list
+Finished building: assignment_day9_accel.list
  
-17:26:54 **** Clean-only build of configuration Debug for project assignment5_que1 ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32g473qetx.d ./Startup/startup_stm32g473qetx.o
-rm -rf ./Src/itm.cyclo ./Src/itm.d ./Src/itm.o ./Src/itm.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/switch_intr.cyclo ./Src/switch_intr.d ./Src/switch_intr.o ./Src/switch_intr.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/system_stm32f4xx.cyclo ./Src/system_stm32f4xx.d ./Src/system_stm32f4xx.o ./Src/system_stm32f4xx.su ./Src/uart.cyclo ./Src/uart.d ./Src/uart.o ./Src/uart.su
-rm -rf assignment4_que1.elf assignment4_que1.list assignment4_que1.map default.size.stdout
- 
-17:26:54 **** Build of configuration Debug for project assignment5_que1 ****
+16:16:43 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32g473qetx.d" -MT"Startup/startup_stm32g473qetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32g473qetx.o" "../Startup/startup_stm32g473qetx.s"
-arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/accel.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/accel.d" -MT"Src/accel.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/accel.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/switch_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/switch_intr.d" -MT"Src/switch_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/switch_intr.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
-arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/uart.o"
-arm-none-eabi-gcc -o "assignment5_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment5_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/Debug/../Src/main.c:41: undefined reference to `SwitchIntrCount'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment5_que1.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:28:44 **** Incremental Build of configuration Debug for project assignment5_que1 ****
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: warning: implicit declaration of function 'Lcd_Puts' [-Wimplicit-function-declaration]
+   36 |         Lcd_Puts("LIS3DSH Accel Demo!\r\n");
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
+ 
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
+   text	   data	    bss	    dec	    hex	filename
+   5012	     84	   1900	   6996	   1b54	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+Finished building: assignment_day9_accel.list
+ 
+16:18:26 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:35:17: warning: implicit declaration of function 'switchInit'; did you mean 'SwitchInit'? [-Wimplicit-function-declaration]
-   35 |                 switchInit();
-      |                 ^~~~~~~~~~
-      |                 SwitchInit
-arm-none-eabi-gcc -o "assignment5_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment5_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/Debug/../Src/main.c:35: undefined reference to `switchInit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/Debug/../Src/main.c:42: undefined reference to `SwitchIntrCount'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment5_que1.elf] Error 1
+../Src/main.c:36:9: warning: implicit declaration of function 'Lcd_Puts' [-Wimplicit-function-declaration]
+   36 |         Lcd_Puts(LCD_LINE1"LIS3DSH Demo!\r\n");
+      |         ^~~~~~~~
+../Src/main.c:36:18: error: 'LCD_LINE1' undeclared (first use in this function)
+   36 |         Lcd_Puts(LCD_LINE1"LIS3DSH Demo!\r\n");
+      |                  ^~~~~~~~~
+../Src/main.c:36:18: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:36:27: error: expected ')' before string constant
+   36 |         Lcd_Puts(LCD_LINE1"LIS3DSH Demo!\r\n");
+      |                 ~         ^~~~~~~~~~~~~~~~~~~
+      |                           )
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:28:55 **** Incremental Build of configuration Debug for project assignment5_que1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment5_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment5_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/Debug/../Src/main.c:42: undefined reference to `SwitchIntrCount'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment5_que1.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:30:56 **** Incremental Build of configuration Debug for project assignment5_que1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment5_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment5_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment5_que1.elf
- 
-arm-none-eabi-size  assignment5_que1.elf 
-arm-none-eabi-objdump -h -S assignment5_que1.elf  > "assignment5_que1.list"
-   text	   data	    bss	    dec	    hex	filename
-   4036	     80	   1904	   6020	   1784	assignment5_que1.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment5_que1.list
- 
-17:35:31 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
- 
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
-   text	   data	    bss	    dec	    hex	filename
-   5436	     80	   1896	   7412	   1cf4	assignment05_que2.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment05_que2.list
- 
-17:37:26 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
- 
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
-   text	   data	    bss	    dec	    hex	filename
-   5436	     80	   1896	   7412	   1cf4	assignment05_que2.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment05_que2.list
- 
-17:39:26 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
- 
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
-   text	   data	    bss	    dec	    hex	filename
-   5448	     80	   1896	   7424	   1d00	assignment05_que2.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment05_que2.list
- 
-17:39:29 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
- 
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
-   text	   data	    bss	    dec	    hex	filename
-   5448	     80	   1896	   7424	   1d00	assignment05_que2.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment05_que2.list
- 
-17:51:04 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:18:39 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:38:17: error: 'LED_ORANGE_PIN' undeclared (first use in this function); did you mean 'GPIO_ORANGE_PIN'?
-   38 |         ledinit(LED_ORANGE_PIN);
-      |                 ^~~~~~~~~~~~~~
-      |                 GPIO_ORANGE_PIN
-../Src/main.c:38:17: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c:39:17: error: 'LED_GREEN_PIN' undeclared (first use in this function); did you mean 'LED_RED_PIN'?
-   39 |         ledinit(LED_GREEN_PIN);
-      |                 ^~~~~~~~~~~~~
-      |                 LED_RED_PIN
-../Src/main.c:50:35: error: 'LED_RED' undeclared (first use in this function)
-   50 |                 case 1 : ledblink(LED_RED,100)  ;
-      |                                   ^~~~~~~
-../Src/main.c:52:33: error: 'LED_BLUE' undeclared (first use in this function)
-   52 |                 case 2 : ledoff(LED_BLUE,100);
-      |                                 ^~~~~~~~
-../Src/main.c:52:26: error: too many arguments to function 'ledoff'
-   52 |                 case 2 : ledoff(LED_BLUE,100);
-      |                          ^~~~~~
-In file included from ../Src/main.c:24:
-../Inc/led.h:25:6: note: declared here
-   25 | void ledoff(uint32_t pin);
-      |      ^~~~~~
-../Src/main.c:54:32: error: 'LED_ORANGE' undeclared (first use in this function)
-   54 |                 case 3 : ledon(LED_ORANGE,100) ;
-      |                                ^~~~~~~~~~
-../Src/main.c:54:26: error: too many arguments to function 'ledon'
-   54 |                 case 3 : ledon(LED_ORANGE,100) ;
-      |                          ^~~~~
-../Inc/led.h:24:6: note: declared here
-   24 | void ledon(uint32_t pin);
-      |      ^~~~~
-../Src/main.c:56:33: error: 'LED_GREEN' undeclared (first use in this function)
-   56 |                 case 4 : ledoff(LED_GREEN,100) ;
-      |                                 ^~~~~~~~~
-../Src/main.c:56:26: error: too many arguments to function 'ledoff'
-   56 |                 case 4 : ledoff(LED_GREEN,100) ;
-      |                          ^~~~~~
-../Inc/led.h:25:6: note: declared here
-   25 | void ledoff(uint32_t pin);
-      |      ^~~~~~
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+../Src/main.c:36:9: warning: implicit declaration of function 'Lcd_Puts' [-Wimplicit-function-declaration]
+   36 |         Lcd_Puts(LCD_LINE1,"LIS3DSH Demo!\r\n");
+      |         ^~~~~~~~
+../Src/main.c:36:18: error: 'LCD_LINE1' undeclared (first use in this function)
+   36 |         Lcd_Puts(LCD_LINE1,"LIS3DSH Demo!\r\n");
+      |                  ^~~~~~~~~
+../Src/main.c:36:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:55:04 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:19:24 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:25:20: warning: extra tokens at end of #include directive
+   25 | #include"i2c_lcd.h";
+      |                    ^
+../Src/main.c: In function 'main':
+../Src/main.c:45:34: warning: passing argument 1 of 'Lcd_Puts' makes integer from pointer without a cast [-Wint-conversion]
+   45 |                         Lcd_Puts(str);
+      |                                  ^~~
+      |                                  |
+      |                                  char *
+In file included from ../Src/main.c:25:
+../Inc/i2c_lcd.h:40:23: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'char *'
+   40 | void Lcd_Puts(uint8_t line, char str[]);
+      |               ~~~~~~~~^~~~
+../Src/main.c:45:25: error: too few arguments to function 'Lcd_Puts'
+   45 |                         Lcd_Puts(str);
+      |                         ^~~~~~~~
+../Inc/i2c_lcd.h:40:6: note: declared here
+   40 | void Lcd_Puts(uint8_t line, char str[]);
+      |      ^~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:19:29 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:36:9: warning: implicit declaration of function 'ledinit'; did you mean 'LedInit'? [-Wimplicit-function-declaration]
-   36 |         ledinit(LED_RED_PIN);
+../Src/main.c:45:34: warning: passing argument 1 of 'Lcd_Puts' makes integer from pointer without a cast [-Wint-conversion]
+   45 |                         Lcd_Puts(str);
+      |                                  ^~~
+      |                                  |
+      |                                  char *
+In file included from ../Src/main.c:25:
+../Inc/i2c_lcd.h:40:23: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'char *'
+   40 | void Lcd_Puts(uint8_t line, char str[]);
+      |               ~~~~~~~~^~~~
+../Src/main.c:45:25: error: too few arguments to function 'Lcd_Puts'
+   45 |                         Lcd_Puts(str);
+      |                         ^~~~~~~~
+../Inc/i2c_lcd.h:40:6: note: declared here
+   40 | void Lcd_Puts(uint8_t line, char str[]);
+      |      ^~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:20:12 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
+ 
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+Finished building: assignment_day9_accel.list
+ 
+16:21:03 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+16:21:29 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+16:21:32 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+16:22:05 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+16:23:13 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+16:23:18 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     84	   1900	   6992	   1b50	assignment_day9_accel.elf
+Finished building: default.size.stdout
+ 
+16:24:11 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: error: unknown type name 'LcdInit'
+   36 |         LcdInit
       |         ^~~~~~~
-      |         LedInit
-../Src/main.c:50:26: warning: implicit declaration of function 'ledblink'; did you mean 'LedBlink'? [-Wimplicit-function-declaration]
-   50 |                 case 1 : ledblink(LED_RED,100)  ;
-      |                          ^~~~~~~~
-      |                          LedBlink
-../Src/main.c:50:35: error: 'LED_RED' undeclared (first use in this function)
-   50 |                 case 1 : ledblink(LED_RED,100)  ;
-      |                                   ^~~~~~~
-../Src/main.c:50:35: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c:52:26: warning: implicit declaration of function 'ledoff'; did you mean 'LedOff'? [-Wimplicit-function-declaration]
-   52 |                 case 2 : ledoff(LED_BLUE,100);
-      |                          ^~~~~~
-      |                          LedOff
-../Src/main.c:52:33: error: 'LED_BLUE' undeclared (first use in this function)
-   52 |                 case 2 : ledoff(LED_BLUE,100);
-      |                                 ^~~~~~~~
-../Src/main.c:54:26: warning: implicit declaration of function 'ledon'; did you mean 'LedOn'? [-Wimplicit-function-declaration]
-   54 |                 case 3 : ledon(LED_ORANGE,100) ;
-      |                          ^~~~~
-      |                          LedOn
-../Src/main.c:54:32: error: 'LED_ORANGE' undeclared (first use in this function); did you mean 'LED_ORANGE_PIN'?
-   54 |                 case 3 : ledon(LED_ORANGE,100) ;
-      |                                ^~~~~~~~~~
-      |                                LED_ORANGE_PIN
-../Src/main.c:56:33: error: 'LED_GREEN' undeclared (first use in this function); did you mean 'LED_GREEN_PIN'?
-   56 |                 case 4 : ledoff(LED_GREEN,100) ;
-      |                                 ^~~~~~~~~
-      |                                 LED_GREEN_PIN
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
+In file included from ../Src/main.c:25:
+../Inc/i2c_lcd.h:25:33: error: expected declaration specifiers or '...' before numeric constant
+   25 | #define LCD_LINE1               0x80
+      |                                 ^~~~
+../Src/main.c:38:18: note: in expansion of macro 'LCD_LINE1'
+   38 |         Lcd_Puts(LCD_LINE1,"LIS3DSH Demo!\r\n");
+      |                  ^~~~~~~~~
+../Src/main.c:38:28: error: expected declaration specifiers or '...' before string constant
+   38 |         Lcd_Puts(LCD_LINE1,"LIS3DSH Demo!\r\n");
+      |                            ^~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:56:14 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:24:26 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:36:9: warning: implicit declaration of function 'ledinit'; did you mean 'LedInit'? [-Wimplicit-function-declaration]
-   36 |         ledinit(LED_RED_PIN);
+../Src/main.c:36:9: error: unknown type name 'LCDInit'
+   36 |         LCDInit
       |         ^~~~~~~
-      |         LedInit
-../Src/main.c:50:35: error: 'LED_RED' undeclared (first use in this function)
-   50 |                 case 1 : LedBlink(LED_RED,100)  ;
-      |                                   ^~~~~~~
-../Src/main.c:50:35: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c:52:35: error: 'LED_BLUE' undeclared (first use in this function)
-   52 |                 case 2 : LedBlink(LED_BLUE,100);
-      |                                   ^~~~~~~~
-../Src/main.c:54:35: error: 'LED_ORANGE' undeclared (first use in this function); did you mean 'LED_ORANGE_PIN'?
-   54 |                 case 3 : LedBlink(LED_ORANGE,100) ;
-      |                                   ^~~~~~~~~~
-      |                                   LED_ORANGE_PIN
-../Src/main.c:56:26: warning: implicit declaration of function 'LedBlnk'; did you mean 'LedBlink'? [-Wimplicit-function-declaration]
-   56 |                 case 4 : LedBlnk(LED_GREEN,100) ;
-      |                          ^~~~~~~
-      |                          LedBlink
-../Src/main.c:56:34: error: 'LED_GREEN' undeclared (first use in this function); did you mean 'LED_GREEN_PIN'?
-   56 |                 case 4 : LedBlnk(LED_GREEN,100) ;
-      |                                  ^~~~~~~~~
-      |                                  LED_GREEN_PIN
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+In file included from ../Src/main.c:25:
+../Inc/i2c_lcd.h:25:33: error: expected declaration specifiers or '...' before numeric constant
+   25 | #define LCD_LINE1               0x80
+      |                                 ^~~~
+../Src/main.c:38:18: note: in expansion of macro 'LCD_LINE1'
+   38 |         Lcd_Puts(LCD_LINE1,"LIS3DSH Demo!\r\n");
+      |                  ^~~~~~~~~
+../Src/main.c:38:28: error: expected declaration specifiers or '...' before string constant
+   38 |         Lcd_Puts(LCD_LINE1,"LIS3DSH Demo!\r\n");
+      |                            ^~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:56:57 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:24:42 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:36:9: warning: implicit declaration of function 'ledinit'; did you mean 'LedInit'? [-Wimplicit-function-declaration]
-   36 |         ledinit(LED_RED_PIN);
+../Src/main.c:36:9: warning: implicit declaration of function 'LCDInit'; did you mean 'Lcd_Init'? [-Wimplicit-function-declaration]
+   36 |         LCDInit();       // initialize uart
       |         ^~~~~~~
-      |         LedInit
-../Src/main.c:56:26: warning: implicit declaration of function 'LedBlnk'; did you mean 'LedBlink'? [-Wimplicit-function-declaration]
-   56 |                 case 4 : LedBlnk(LED_GREEN_PIN,100) ;
-      |                          ^~~~~~~
-      |                          LedBlink
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+      |         Lcd_Init
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 /opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:36: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:37: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:38: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:39: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:56: undefined reference to `LedBlnk'
+/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:36: undefined reference to `LCDInit'
 collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment05_que2.elf] Error 1
+make: *** [makefile:63: assignment_day9_accel.elf] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:57:58 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:24:56 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: warning: implicit declaration of function 'LcdInit'; did you mean 'Lcd_Init'? [-Wimplicit-function-declaration]
+   36 |         LcdInit();       // initialize uart
+      |         ^~~~~~~
+      |         Lcd_Init
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 /opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:36: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:37: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:38: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:39: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:56: undefined reference to `LedBlnk'
+/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/Debug/../Src/main.c:36: undefined reference to `LcdInit'
 collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment05_que2.elf] Error 1
+make: *** [makefile:63: assignment_day9_accel.elf] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:57:58 **** Incremental Build of configuration Debug for project assignment06 ****
+16:25:50 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-size  assignment06.elf 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
+ 
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
    text	   data	    bss	    dec	    hex	filename
-   2020	      4	   1564	   3588	    e04	assignment06.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-17:57:59 **** Incremental Build of configuration Debug for project assignment5_que1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment5_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment5_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment5_que1.elf
+Finished building: assignment_day9_accel.list
  
-arm-none-eabi-size  assignment5_que1.elf 
-arm-none-eabi-objdump -h -S assignment5_que1.elf  > "assignment5_que1.list"
+16:26:00 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
+make -j8 all 
+arm-none-eabi-size  assignment_day9_accel.elf 
    text	   data	    bss	    dec	    hex	filename
-   4036	     80	   1904	   6020	   1784	assignment5_que1.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment5_que1.list
- 
-17:58:15 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:36: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:37: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:38: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:39: undefined reference to `ledinit'
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:56: undefined reference to `LedBlnk'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment05_que2.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:59:14 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:27:56 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:56:26: warning: implicit declaration of function 'LedBlnk'; did you mean 'LedBlink'? [-Wimplicit-function-declaration]
-   56 |                 case 4 : LedBlnk(LED_GREEN_PIN,100) ;
-      |                          ^~~~~~~
-      |                          LedBlink
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-/opt/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
-/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/Debug/../Src/main.c:56: undefined reference to `LedBlnk'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:63: assignment05_que2.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-17:59:34 **** Incremental Build of configuration Debug for project assignment05_que2 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
  
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
    text	   data	    bss	    dec	    hex	filename
-   5588	     84	   1900	   7572	   1d94	assignment05_que2.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment05_que2.list
+Finished building: assignment_day9_accel.list
  
-18:02:00 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:27:59 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
- 
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
+arm-none-eabi-size  assignment_day9_accel.elf 
    text	   data	    bss	    dec	    hex	filename
-   5588	     84	   1900	   7572	   1d94	assignment05_que2.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment05_que2.list
- 
-18:02:04 **** Incremental Build of configuration Debug for project assignment05_que2 ****
+16:28:44 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-gcc -o "assignment05_que2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment05_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment05_que2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment05_que2.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
  
-arm-none-eabi-size  assignment05_que2.elf 
-arm-none-eabi-objdump -h -S assignment05_que2.elf  > "assignment05_que2.list"
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
    text	   data	    bss	    dec	    hex	filename
-   5588	     84	   1900	   7572	   1d94	assignment05_que2.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment05_que2.list
+Finished building: assignment_day9_accel.list
  
-18:03:48 **** Incremental Build of configuration Debug for project assignment5_que1 ****
+16:31:37 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-gcc -o "assignment5_que1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment4_que1/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment5_que1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment5_que1.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "assignment_day9_accel.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment_day9_accel/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment_day9_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: assignment_day9_accel.elf
  
-arm-none-eabi-size  assignment5_que1.elf 
-arm-none-eabi-objdump -h -S assignment5_que1.elf  > "assignment5_que1.list"
+arm-none-eabi-size  assignment_day9_accel.elf 
+arm-none-eabi-objdump -h -S assignment_day9_accel.elf  > "assignment_day9_accel.list"
    text	   data	    bss	    dec	    hex	filename
-   4036	     80	   1904	   6020	   1784	assignment5_que1.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
-Finished building: assignment5_que1.list
+Finished building: assignment_day9_accel.list
  
-18:03:52 **** Incremental Build of configuration Debug for project assignment5_que1 ****
+16:31:39 **** Incremental Build of configuration Debug for project assignment_day9_accel ****
 make -j8 all 
-arm-none-eabi-size  assignment5_que1.elf 
+arm-none-eabi-size  assignment_day9_accel.elf 
    text	   data	    bss	    dec	    hex	filename
-   4036	     80	   1904	   6020	   1784	assignment5_que1.elf
-Finished building: default.size.stdout
- 
-18:03:55 **** Incremental Build of configuration Debug for project assignment5_que1 ****
-make -j8 all 
-arm-none-eabi-size  assignment5_que1.elf 
-   text	   data	    bss	    dec	    hex	filename
-   4036	     80	   1904	   6020	   1784	assignment5_que1.elf
-Finished building: default.size.stdout
- 
-18:09:51 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/i2c_lcd.c: In function 'Lcd_ShiftLeft':
-../Src/i2c_lcd.c:86:43: error: expected ';' before '}' token
-   86 |         Lcd_WriteByte(LCD_CMD, LCD_SCROLL)
-      |                                           ^
-      |                                           ;
-   87 | }
-      | ~                                          
-make: *** [Src/subdir.mk:37: Src/i2c_lcd.o] Error 1
-make: *** Waiting for unfinished jobs....
-../Src/main.c: In function 'main':
-../Src/main.c:41:21: warning: implicit declaration of function 'Lcd_SCROLL'; did you mean 'LCD_SCROLL'? [-Wimplicit-function-declaration]
-   41 |                     Lcd_SCROLL();
-      |                     ^~~~~~~~~~
-      |                     LCD_SCROLL
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:10:27 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/i2c_lcd.c: In function 'Lcd_ShiftLeft':
-../Src/i2c_lcd.c:86:43: error: expected ';' before '}' token
-   86 |         Lcd_WriteByte(LCD_CMD, LCD_SCROLL)
-      |                                           ^
-      |                                           ;
-   87 | }
-      | ~                                          
-make: *** [Src/subdir.mk:37: Src/i2c_lcd.o] Error 1
-make: *** Waiting for unfinished jobs....
-../Src/main.c: In function 'main':
-../Src/main.c:39:58: error: 'count' undeclared (first use in this function)
-   39 |                         sprintf(str, "God Bless You %d", count);
-      |                                                          ^~~~~
-../Src/main.c:39:58: note: each undeclared identifier is reported only once for each function it appears in
-In file included from ../Src/main.c:28:
-../Inc/i2c_lcd.h:28:25: error: called object is not a function or function pointer
-   28 | #define LCD_SCROLL      0x18
-      |                         ^~~~
-../Src/main.c:41:21: note: in expansion of macro 'LCD_SCROLL'
-   41 |                     LCD_SCROLL();
-      |                     ^~~~~~~~~~
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:10:56 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:39:58: error: 'count' undeclared (first use in this function)
-   39 |                         sprintf(str, "God Bless You %d", count);
-      |                                                          ^~~~~
-../Src/main.c:39:58: note: each undeclared identifier is reported only once for each function it appears in
-In file included from ../Src/main.c:28:
-../Inc/i2c_lcd.h:28:25: error: called object is not a function or function pointer
-   28 | #define LCD_SCROLL      0x18
-      |                         ^~~~
-../Src/main.c:41:21: note: in expansion of macro 'LCD_SCROLL'
-   41 |                     LCD_SCROLL();
-      |                     ^~~~~~~~~~
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:11:19 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-In file included from ../Src/main.c:28:
-../Src/main.c: In function 'main':
-../Inc/i2c_lcd.h:28:25: error: called object is not a function or function pointer
-   28 | #define LCD_SCROLL      0x18
-      |                         ^~~~
-../Src/main.c:41:21: note: in expansion of macro 'LCD_SCROLL'
-   41 |                     LCD_SCROLL();
-      |                     ^~~~~~~~~~
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:11:50 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-In file included from ../Src/main.c:28:
-../Src/main.c: In function 'main':
-../Inc/i2c_lcd.h:28:20: error: called object is not a function or function pointer
-   28 | #define LCD_SCROLL 0x18
-      |                    ^~~~
-../Src/main.c:41:21: note: in expansion of macro 'LCD_SCROLL'
-   41 |                     LCD_SCROLL();
-      |                     ^~~~~~~~~~
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-make: *** [Src/subdir.mk:37: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:12:10 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/i2c_lcd.c: In function 'Lcd_ShiftLeft':
-../Src/i2c_lcd.c:86:32: error: 'LCD_SCROLL' undeclared (first use in this function); did you mean 'SCROLL'?
-   86 |         Lcd_WriteByte(LCD_CMD, LCD_SCROLL);
-      |                                ^~~~~~~~~~
-      |                                SCROLL
-../Src/i2c_lcd.c:86:32: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c: In function 'main':
-../Src/main.c:41:21: warning: implicit declaration of function 'LCD_SCROLL'; did you mean 'SCROLL'? [-Wimplicit-function-declaration]
-   41 |                     LCD_SCROLL();
-      |                     ^~~~~~~~~~
-      |                     SCROLL
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-make: *** [Src/subdir.mk:37: Src/i2c_lcd.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:13:07 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/i2c_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c_lcd.d" -MT"Src/i2c_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/i2c_lcd.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:33:14: warning: unused variable 'str' [-Wunused-variable]
-   33 |         char str[32];
-      |              ^~~
-arm-none-eabi-gcc -o "assignment06.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment06/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment06.elf
- 
-arm-none-eabi-size  assignment06.elf 
-arm-none-eabi-objdump -h -S assignment06.elf  > "assignment06.list"
-   text	   data	    bss	    dec	    hex	filename
-   2020	      4	   1564	   3588	    e04	assignment06.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment06.list
- 
-18:16:09 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment06.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment06/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment06.elf
- 
-arm-none-eabi-size  assignment06.elf 
-arm-none-eabi-objdump -h -S assignment06.elf  > "assignment06.list"
-   text	   data	    bss	    dec	    hex	filename
-   2020	      4	   1564	   3588	    e04	assignment06.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment06.list
- 
-18:16:57 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DB_G473E_ZEST1S -DSTM32G473QETx -DSTM32G4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "assignment06.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/gauri/DESD/MCPI/MCPI_all_Assignments/MCPI_all_Assignments/assignment06/STM32G473QETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="assignment06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: assignment06.elf
- 
-arm-none-eabi-size  assignment06.elf 
-arm-none-eabi-objdump -h -S assignment06.elf  > "assignment06.list"
-   text	   data	    bss	    dec	    hex	filename
-   2024	      4	   1564	   3592	    e08	assignment06.elf
-Finished building: default.size.stdout
- 
-Finished building: assignment06.list
- 
-18:24:18 **** Incremental Build of configuration Debug for project assignment06 ****
-make -j8 all 
-arm-none-eabi-size  assignment06.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2024	      4	   1564	   3592	    e08	assignment06.elf
+   5464	     84	   1900	   7448	   1d18	assignment_day9_accel.elf
 Finished building: default.size.stdout
  
