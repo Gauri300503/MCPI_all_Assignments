@@ -50,7 +50,7 @@ int main(void)
 		case 1 : LedBlink(LED_RED_PIN,100);
 		         break;
 		case 2 : LedBlink(LED_BLUE_PIN,100);
-                 break;
+                         break;
 		case 3 : LedBlink(LED_ORANGE_PIN,100) ;
 		         break;
 		case 4 : LedBlink(LED_GREEN_PIN,100) ;
